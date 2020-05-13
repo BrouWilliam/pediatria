@@ -1,0 +1,328 @@
+body{
+    font-family: 'Noto Sans', sans-serif !important;
+}
+/****************************************/
+/* PADRÕES */
+/***************************************/
+.title{color: #52B7C5;font-weight: bold;}
+.subtitle{color: #52B7C5;font-weight: bold;}
+.btnEnviar{background: #52B7C5;color: white;font-weight: bold;border-radius: 0.5em;width: 100%;}
+.btnEnviar:hover{text-decoration: none; color: white; background: rgb(136, 195, 202);}
+.btnLogin{border: solid 2px #52B7C5;border-radius: 5em;color: #52B7C5;font-weight: bold;}
+.btnLogin:hover{border: solid 2px #52B7C5;border-radius: 5em;color: white;font-weight: bold;background: #52B7C5;text-decoration: none;transition: 0.5s;}
+.btnAgendarConsultaAzul{text-decoration: none;background: #52B7C5;color: white;font-weight: bold;padding: 0.6em 46px;border-radius: 5em;border: solid 2px #52B7C5;}
+.btnAgendarConsultaAzul:hover{text-decoration: none;background: transparent;color: #52B7C5;border: solid 2px #52B7C5;transition: .5s;}
+.btnAgendarConsultaBranco{text-decoration: none;background: transparent;color: white;font-weight: bold;padding: 0.6em 46px;border-radius: 5em;border: solid 2px white;}
+.btnAgendarConsultaBranco:hover{text-decoration: none;background: transparent;color: #52B7C5;border: solid 2px #52B7C5;transition: .5s;}
+.btn-createaccont{color: white;border: solid 2px white;border-radius: 10em;font-weight: 500;}
+.btn-createaccont:hover{color: #52B7C5;border: solid 2px white;background: white; border-radius: 10em;}
+
+
+
+/***************************************/
+/* NAVBAR*/
+/***************************************/
+
+
+.navbar-b {
+    transition: all .5s ease-in-out;
+    background-color: white;
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+  }
+  
+  .navbar-b.navbar-reduce {
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+  }
+  
+  .navbar-b.navbar-trans .nav-item,
+  .navbar-b.navbar-reduce .nav-item {
+    position: relative;
+    padding-right: 10px;
+    padding-left: 0;
+  }
+  
+  .navbar-b.navbar-trans .nav-link,
+  .navbar-b.navbar-reduce .nav-link {
+    color: #52B7C5;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .navbar-b.navbar-trans .nav-link:before,
+  .navbar-b.navbar-reduce .nav-link:before {
+    content: '';
+    position: absolute;
+    margin-left: 0px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transition: all 500ms ease;
+  }
+  
+  .navbar-b.navbar-trans .nav-link:hover,
+  .navbar-b.navbar-reduce .nav-link:hover {
+    color: #1B1B1B;
+  }
+  
+  .navbar-b.navbar-trans .nav-link:hover:before,
+  .navbar-b.navbar-reduce .nav-link:hover:before {
+    width: 35px;
+  }
+  
+  .navbar-b.navbar-trans .show > .nav-link:before,
+  .navbar-b.navbar-trans .active > .nav-link:before,
+  .navbar-b.navbar-trans .nav-link.show:before,
+  .navbar-b.navbar-trans .nav-link.active:before,
+  .navbar-b.navbar-reduce .show > .nav-link:before,
+  .navbar-b.navbar-reduce .active > .nav-link:before,
+  .navbar-b.navbar-reduce .nav-link.show:before,
+  .navbar-b.navbar-reduce .nav-link.active:before {
+    width: 35px;
+  }
+  
+  .navbar-b.navbar-trans .nav-link:before {
+    background-color: #52B7C5;
+  }
+  
+  .navbar-b.navbar-trans .nav-link:hover {
+    color: #52B7C5;
+  }
+  
+  .navbar-b.navbar-trans .show > .nav-link,
+  .navbar-b.navbar-trans .active > .nav-link,
+  .navbar-b.navbar-trans .nav-link.show,
+  .navbar-b.navbar-trans .nav-link.active {
+    color: #52B7C5;
+  }
+  
+  .navbar-b.navbar-reduce {
+    transition: all .5s ease-in-out;
+    background-color: white;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    padding-top: 0;
+    padding-bottom: 1em;
+    box-shadow: rgba(0, 0, 0, 0.06);
+  }
+  
+  .navbar-b.navbar-reduce .nav-link {
+    color: #52B7C5;
+  }
+  
+  .navbar-b.navbar-reduce .nav-link:before {
+    background-color: #52B7C5;
+  }
+  
+  .navbar-b.navbar-reduce .nav-link:hover {
+    color:rgb(136, 195, 202);
+  }
+  
+  .navbar-b.navbar-reduce .show > .nav-link,
+  .navbar-b.navbar-reduce .active > .nav-link,
+  .navbar-b.navbar-reduce .nav-link.show,
+  .navbar-b.navbar-reduce .nav-link.active {
+    color: #52B7C5;
+  }
+  
+  .navbar-b.navbar-reduce .navbar-brand {
+    color: #52B7C5;
+  }
+  
+  .navbar-b.navbar-reduce .navbar-toggler span {
+    background-color: #52B7C5;
+  }
+  
+  .navbar-b .navbar-brand {
+    color: #52B7C5;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  
+  .navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
+  .navbar-b .dropdown.show .dropdown-menu,
+  .navbar-b .dropdown-btn.show .dropdown-menu {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    visibility: visible !important;
+  }
+  
+  .navbar-b .dropdown-menu {
+    margin: 1.12rem 0 0;
+    border-radius: 0;
+  }
+  
+  .navbar-b .dropdown-menu .dropdown-item {
+    padding: .7rem 1.7rem;
+    transition: all 500ms ease;
+  }
+  
+  .navbar-b .dropdown-menu .dropdown-item:hover {background-color: #0078ff;color: #52B7C5;transition: all 500ms ease;}
+  .navbar-b .dropdown-menu .dropdown-item.active {background-color: #0078ff;}
+  
+  /*--/ Hamburger Navbar /--*/
+  
+  .navbar-toggler {position: relative;}
+  
+  .navbar-toggler:focus,.navbar-toggler:active {outline: 0;}
+  
+  .navbar-toggler span {display: block;background-color: #52B7C5;height: 3px;width: 25px;margin-top: 4px;margin-bottom: 4px;-webkit-transform: rotate(0deg);transform: rotate(0deg);left: 0;opacity: 1;}
+  .navbar-toggler span:nth-child(1),
+  .navbar-toggler span:nth-child(3) {transition: -webkit-transform .35s ease-in-out;transition: transform .35s ease-in-out;transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;}
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {position: absolute;left: 12px;top: 10px;-webkit-transform: rotate(135deg);transform: rotate(135deg);opacity: 0.9;}
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {height: 12px;visibility: hidden;background-color: transparent;}
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {position: absolute;left: 12px;top: 10px;-webkit-transform: rotate(-135deg);transform: rotate(-135deg);opacity: 0.9;}
+  @media (min-width: 768px){.navbar-b.navbar-trans .nav-link:before, .navbar-b.navbar-reduce .nav-link:before {margin-left: 10px;}}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/background-header.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section .como-funciona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/background-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section .como-funciona .imgBox img{
+    width: 9.4em;
+}
+section .como-funciona .imgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .nossa-clinica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/background-3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/background-kids.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section .nos-escolher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+section .nos-escolher img{
+    border-radius: 1.7em;
+}
+section .depoimentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+section .contato ul li a{
+    color: #808D9C;
+}
+section .contato ul li a:hover{
+    text-decoration: none;
+    color: rgb(136, 195, 202);
+}
+section .contato ul li a i{
+    color: #52B7C5;
+}
+section .contato ul.social-icons li a i{
+    font-size: 2em;
+    margin: 0 1em;
+}
+section .contato ul.social-icons li a i:hover{
+    color: rgb(136, 195, 202);
+    transition: 0.5s;
+}
+footer{
+    background: #52B7C5;
+    color: white;
+}
+section .contato footer li a {
+    color: white;
+}
+section .contato footer li a i{
+    color: white;
+}
+    
+
+@media (max-width: 575.98px) { 
+    .navbar-nav{
+        align-items: normal !important;
+    }
+    header{
+        height: 100vh;
+    }
+    section .como-funciona, section .nossa-clinica, section .nos-escolher, section .depoimentos, section .contato{
+        height: auto;
+    }
+    section .nossa-clinica, section .nos-escolher, section .contato{
+        margin-top: 5em;
+    }
+
+}
+
+@media (max-width: 767.98px) {  }
+
+@media (max-width: 991.98px) {  }
+
+@media (max-width: 1199.98px) {  }
+
+
+/* Login */
+
+main section .login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+main section .login .formulario form{
+  width: 100%;
+  max-width: 600px;
+}
+main section .login .col-lg-4{
+  background: #52B7C5;
+  color: white;
+}
+main section .login .col-lg-8 i{
+  color: #52B7C5;
+  font-size: 1.5em;
+}
